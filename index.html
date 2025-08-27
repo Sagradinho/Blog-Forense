@@ -5,18 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Perícia Criminal e Investigação Forense</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; color: #333; }
-        header { background: #222; color: #fff; padding: 20px 0; text-align: center; }
-        nav { background: #444; text-align: center; padding: 10px 0; }
-        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        .container { width: 90%; max-width: 900px; margin: 20px auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .post { margin-bottom: 40px; }
-        .post h2 { color: #222; }
-        .post p { margin-bottom: 10px; }
-        footer { background: #222; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
-        a.button { display: inline-block; padding: 8px 12px; background: #222; color: #fff; text-decoration: none; margin-top: 10px; }
-        a.button:hover { background: #444; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+        header {
+            background: #1b1f23;
+            color: #fff;
+            padding: 35px 20px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        header h1 { margin: 0; font-size: 2.4em; }
+        header p { font-size: 1.1em; color: #cfd8dc; margin-top: 8px; }
+        nav {
+            background: #2c3035;
+            text-align: center;
+            padding: 12px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav a:hover { background: #f0ad4e; color: #fff; }
+        .container {
+            width: 90%;
+            max-width: 950px;
+            margin: 25px auto;
+            background: #fff;
+            padding: 30px 35px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+        .post { 
+            margin-bottom: 50px;
+            border-left: 4px solid #f0ad4e;
+            padding-left: 15px;
+        }
+        .post img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .post h2 { color: #1b1f23; font-size: 1.9em; margin-bottom: 10px; }
+        .post h3 { margin-top: 20px; font-size: 1.3em; }
+        .post p, .post ul { font-size: 1em; margin-bottom: 12px; }
+        .post ul li { margin-bottom: 6px; }
+        a.button {
+            display: inline-block;
+            padding: 9px 16px;
+            background: #f0ad4e;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        a.button:hover { background: #d4882d; }
+        #sobre h2, #contato h2 { font-size: 1.7em; border-bottom: 2px solid #f0ad4e; padding-bottom: 5px; margin-bottom: 15px; }
+        #contato a { color: #f0ad4e; font-weight: 600; text-decoration: none; }
+        #contato a:hover { text-decoration: underline; }
+        footer {
+            background: #1b1f23;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+        @media screen and (max-width: 600px) {
+            nav a { display: block; margin: 8px 0; }
+            .container { padding: 20px 20px; }
+            header h1 { font-size: 2em; }
+        }
     </style>
 </head>
 <body>
@@ -35,7 +107,6 @@
 
 <div class="container" id="home">
     <h2>Últimos Posts</h2>
-
     <div class="post"><h3>Como a perícia criminal resolveu o caso do assassinato X</h3><a class="button" href="#post1">Leia mais</a></div>
     <div class="post"><h3>Erros comuns na coleta de evidências e como evitá-los</h3><a class="button" href="#post2">Leia mais</a></div>
     <div class="post"><h3>O caminho para se tornar perito criminal: cursos e certificações</h3><a class="button" href="#post3">Leia mais</a></div>
@@ -52,125 +123,199 @@
 
     <!-- Post 1 -->
     <div class="post" id="post1">
+        <img src="https://images.unsplash.com/photo-4nulm-JUYFo" alt="Investigadores em cena">
         <h2>Como a perícia criminal resolveu o caso do assassinato X</h2>
-        <p>O caso do assassinato X chamou atenção pela complexidade e pelo uso de técnicas forenses inovadoras. Neste artigo, vamos analisar passo a passo como a perícia criminal contribuiu para esclarecer os fatos e levar o culpado à justiça.</p>
-        <h3>1. Coleta de Evidências</h3>
-        <ul><li>Investigadores preservaram a cena do crime, evitando contaminação.</li><li>Foram coletadas impressões digitais, amostras de sangue e fibras têxteis.</li><li><strong>Dica:</strong> registrar a localização de cada evidência com fotos e anotações detalhadas.</li></ul>
-        <h3>2. Análise Laboratorial</h3>
-        <ul><li><strong>DNA:</strong> comparado com suspeitos e amostras do banco de dados.</li><li><strong>Balística:</strong> projéteis encontrados foram analisados para identificar a arma.</li><li><strong>Microscopia:</strong> fibras e resíduos químicos revelaram pistas importantes.</li></ul>
-        <h3>3. Reconstrução da Cena</h3>
-        <p>Diagramas e simulações foram usados para entender a dinâmica do crime, identificando inconsistências nos depoimentos.</p>
-        <h3>4. Conclusão da Investigação</h3>
-        <p>Combinação de evidências levou à identificação do autor, mostrando a importância da interdisciplinaridade na perícia criminal.</p>
-        <p><strong>Engajamento:</strong> Você teria feito algo diferente na investigação? Comente abaixo!</p>
+        <p>O caso do assassinato X chamou atenção pela complexidade e pelo uso de técnicas forenses inovadoras...</p>
+        <h3>1. Coleta de Evidências 🧪</h3>
+        <ul>
+            <li>Investigadores preservaram a cena do crime, evitando contaminação.</li>
+            <li>Foram coletadas impressões digitais, amostras de sangue e fibras têxteis.</li>
+            <li>Registrar a localização de cada evidência com fotos e anotações detalhadas.</li>
+        </ul>
+        <h3>2. Análise Laboratorial 🔬</h3>
+        <ul>
+            <li>DNA comparado com suspeitos e bancos de dados.</li>
+            <li>Balística: projéteis analisados para identificar a arma.</li>
+            <li>Microscopia: fibras e resíduos químicos revelaram pistas importantes.</li>
+        </ul>
+        <h3>3. Reconstrução da Cena 🏛️</h3>
+        <p>Diagramas e simulações foram usados para entender a dinâmica do crime...</p>
+        <h3>4. Conclusão da Investigação ✅</h3>
+        <p>Combinação de evidências levou à identificação do autor...</p>
     </div>
 
     <!-- Post 2 -->
     <div class="post" id="post2">
+        <img src="https://images.unsplash.com/photo-gKXKBY-C-Dk" alt="Coleta de evidências">
         <h2>Erros comuns na coleta de evidências e como evitá-los</h2>
-        <p>A coleta correta de evidências é essencial para o sucesso da investigação. Pequenos erros podem comprometer o resultado do trabalho forense.</p>
-        <h3>1. Contaminação da Cena do Crime</h3>
-        <ul><li>Tocar objetos sem luvas ou sem registrar a posição correta.</li><li><strong>Como evitar:</strong> usar luvas, máscaras e fotografar cada evidência.</li></ul>
-        <h3>2. Armazenamento Incorreto</h3>
-        <ul><li>Misturar evidências biológicas com objetos químicos.</li><li><strong>Como evitar:</strong> utilizar embalagens separadas e etiquetas claras.</li></ul>
-        <h3>3. Falta de Registro Detalhado</h3>
-        <ul><li>Não anotar hora, local e responsável pela coleta.</li><li><strong>Como evitar:</strong> usar formulários padronizados e checklists.</li></ul>
-        <h3>4. Transporte Improprio</h3>
-        <ul><li>Exposição a calor, umidade ou movimento excessivo.</li><li><strong>Como evitar:</strong> transporte em caixas apropriadas com proteção adequada.</li></ul>
-        <p><strong>Engajamento:</strong> Quiz rápido: Você identificaria o erro nesta coleta? Experimente comentar abaixo!</p>
+        <h3>1. Contaminação da Cena do Crime 🧤</h3>
+        <ul>
+            <li>Tocar objetos sem luvas ou sem registrar a posição correta.</li>
+            <li>Usar luvas, máscaras e fotografar cada evidência para evitar contaminação.</li>
+        </ul>
+        <h3>2. Armazenamento Incorreto 📦</h3>
+        <ul>
+            <li>Misturar evidências biológicas com objetos químicos.</li>
+            <li>Utilizar embalagens separadas e etiquetas claras.</li>
+        </ul>
+        <h3>3. Falta de Registro Detalhado 📝</h3>
+        <ul>
+            <li>Não anotar hora, local e responsável pela coleta.</li>
+            <li>Usar formulários padronizados e checklists.</li>
+        </ul>
+        <h3>4. Transporte Impróprio 🚚</h3>
+        <ul>
+            <li>Exposição a calor, umidade ou movimento excessivo.</li>
+            <li>Transporte em caixas apropriadas com proteção adequada.</li>
+        </ul>
     </div>
 
     <!-- Post 3 -->
     <div class="post" id="post3">
+        <img src="https://images.unsplash.com/photo-HkTMcmlMOUQ" alt="Laboratório Forense">
         <h2>O caminho para se tornar perito criminal: cursos e certificações</h2>
-        <p>Se tornar perito criminal exige estudo, prática e atualização constante. Neste guia, detalhamos os passos para ingressar na carreira e alcançar a excelência profissional.</p>
-        <h3>1. Formação Acadêmica</h3>
-        <ul><li>Cursos recomendados: Biologia, Química, Medicina, Direito ou Engenharia.</li><li>Graduação ou pós-graduação em áreas relacionadas à perícia criminal.</li></ul>
-        <h3>2. Cursos Técnicos e Certificações</h3>
-        <ul><li>Curso de perito criminal oferecido por institutos oficiais.</li><li>Certificações específicas: balística, análise de DNA, perícia digital.</li></ul>
-        <h3>3. Experiência Prática</h3>
-        <ul><li>Estágios em laboratórios forenses ou órgãos públicos.</li><li>Participação em simulações de cena de crime e treinamentos.</li></ul>
-        <h3>4. Desenvolvimento Contínuo</h3>
-        <ul><li>Atualização constante com novas técnicas e tecnologias.</li><li>Participação em congressos, workshops e fóruns especializados.</li></ul>
-        <p><strong>Engajamento:</strong> Comente dúvidas sobre cursos, certificações ou experiência prática!</p>
+        <h3>1. Formação Acadêmica 🎓</h3>
+        <ul>
+            <li>Cursos recomendados: Biologia, Química, Medicina, Direito ou Engenharia.</li>
+            <li>Graduação ou pós-graduação em áreas relacionadas à perícia criminal.</li>
+        </ul>
+        <h3>2. Cursos Técnicos e Certificações 📜</h3>
+        <ul>
+            <li>Curso de perito criminal em institutos oficiais.</li>
+            <li>Certificações: balística, análise de DNA, perícia digital.</li>
+        </ul>
+        <h3>3. Experiência Prática 🏫</h3>
+        <ul>
+            <li>Estágios em laboratórios forenses ou órgãos públicos.</li>
+            <li>Participação em simulações de cena de crime e investigações.</li>
+        </ul>
     </div>
 
     <!-- Post 4 -->
     <div class="post" id="post4">
+        <img src="https://images.unsplash.com/photo-ufmA0N1PC2Y" alt="Análise de DNA">
         <h2>Análise de DNA na perícia criminal: princípios e aplicações</h2>
-        <p>A análise de DNA é uma das ferramentas mais precisas da perícia criminal. Neste post, explicamos os princípios básicos, como é feita a coleta e sua aplicação na investigação de crimes.</p>
-        <h3>1. Coleta e preservação</h3>
-        <ul><li>Coletar amostras biológicas (sangue, saliva, cabelos) sem contaminação.</li><li>Usar embalagens estéreis e armazenar em temperaturas adequadas.</li></ul>
-        <h3>2. Processamento Laboratorial</h3>
-        <ul><li>Extração do DNA das células.</li><li>Amplificação via PCR (Reação em Cadeia da Polimerase).</li><li>Comparação com suspeitos ou bancos de dados.</li></ul>
-        <h3>3. Aplicações práticas</h3>
-        <ul><li>Identificação de suspeitos.</li><li>Exclusão de inocentes.</li><li>Relação de evidências em múltiplos casos.</li></ul>
-        <p><strong>Engajamento:</strong> Você já sabia que o DNA pode resolver casos mesmo após anos? Comente sua opinião abaixo!</p>
+        <h3>1. Coleta de Amostras 🧬</h3>
+        <ul>
+            <li>Coleta de sangue, cabelo, saliva e outros materiais biológicos.</li>
+            <li>Evitar contaminação usando luvas e embalagens apropriadas.</li>
+        </ul>
+        <h3>2. Extração e Amplificação 🔬</h3>
+        <ul>
+            <li>Extração do DNA da amostra.</li>
+            <li>Amplificação com PCR para análise detalhada.</li>
+        </ul>
+        <h3>3. Comparação e Resultados ✅</h3>
+        <ul>
+            <li>Comparar perfis genéticos com suspeitos ou bancos de dados.</li>
+            <li>Fornece evidência confiável para processos criminais.</li>
+        </ul>
     </div>
 
     <!-- Post 5 -->
     <div class="post" id="post5">
+        <img src="https://images.unsplash.com/photo-jpqyfK7GB4w" alt="Investigação digital">
         <h2>Investigação digital: rastreando criminosos na internet</h2>
-        <p>Com a expansão da tecnologia, a perícia digital se tornou essencial. Saiba como peritos rastreiam atividades criminosas online e coletam evidências digitais confiáveis.</p>
-        <h3>1. Coleta de evidências digitais</h3>
-        <ul><li>Captura de logs de acesso, mensagens e arquivos.</li><li>Preservação de dados sem alterar metadados.</li></ul>
-        <h3>2. Análise de dispositivos</h3>
-        <ul><li>Computadores, smartphones e servidores são examinados com softwares forenses.</li><li>Busca por padrões, rastros de acesso e arquivos deletados.</li></ul>
-        <h3>3. Aplicações práticas</h3>
-        <ul><li>Investigar fraudes, cibercrimes e ameaças online.</li><li>Auxiliar na identificação de autores de crimes digitais.</li></ul>
-        <p><strong>Engajamento:</strong> Você já ouviu falar em crimes solucionados apenas com perícia digital? Compartilhe abaixo!</p>
+        <h3>1. Coleta de evidências digitais 💻</h3>
+        <ul>
+            <li>Captura de logs de acesso, mensagens e arquivos.</li>
+            <li>Preservação de dados sem alterar metadados.</li>
+        </ul>
+        <h3>2. Análise de dispositivos 🖥️</h3>
+        <ul>
+            <li>Computadores, smartphones e servidores examinados com softwares forenses.</li>
+            <li>Busca por padrões, rastros de acesso e arquivos deletados.</li>
+        </ul>
+        <h3>3. Aplicações práticas 🔎</h3>
+        <ul>
+            <li>Investigar fraudes, cibercrimes e ameaças online.</li>
+            <li>Auxiliar na identificação de autores de crimes digitais.</li>
+        </ul>
     </div>
 
     <!-- Post 6 -->
     <div class="post" id="post6">
+        <img src="https://images.unsplash.com/photo-wW7qWzC1PPQ" alt="Balística">
         <h2>Balística: como a análise de projéteis ajuda a resolver crimes</h2>
-        <p>A balística forense é crucial para entender a dinâmica de disparos e identificar armas usadas em crimes. Vamos detalhar os principais procedimentos e aplicações.</p>
-        <h3>1. Coleta de projéteis e cartuchos</h3>
-        <ul><li>Registrar local exato de cada projétil.</li><li>Evitar contato direto com mãos para não alterar marcas de raiamento.</li></ul>
-        <h3>2. Análise Laboratorial</h3>
-        <ul><li>Comparação de marcas de raiamento nos projéteis com armas suspeitas.</li><li>Estudo da trajetória para reconstruir o crime.</li></ul>
-        <h3>3. Aplicações práticas</h3>
-        <ul><li>Identificação de armas usadas.</li><li>Confirmação ou refutação de depoimentos.</li><li>Auxílio em casos de múltiplos disparos ou suspeitos.</li></ul>
-        <p><strong>Engajamento:</strong> Você acha que a balística pode realmente “resolver” a maioria dos crimes com armas de fogo? Comente abaixo!</p>
+        <h3>1. Coleta de projéteis e cartuchos 🔫</h3>
+        <ul>
+            <li>Registrar local exato de cada projétil.</li>
+            <li>Evitar contato direto para não alterar marcas de raiamento.</li>
+        </ul>
+        <h3>2. Análise Laboratorial 🧬</h3>
+        <ul>
+            <li>Comparação de marcas de raiamento nos projéteis com armas suspeitas.</li>
+            <li>Estudo da trajetória para reconstruir o crime.</li>
+        </ul>
+        <h3>3. Aplicações práticas ✅</h3>
+        <ul>
+            <li>Identificação de armas usadas.</li>
+            <li>Confirmação ou refutação de depoimentos.</li>
+            <li>Auxílio em casos de múltiplos disparos ou suspeitos.</li>
+        </ul>
     </div>
 
     <!-- Post 7 -->
     <div class="post" id="post7">
+        <img src="https://images.unsplash.com/photo-2d4lAQAlbDA" alt="Reconstrução de cena de crime">
         <h2>Técnicas de reconstrução de cena de crime</h2>
-        <p>A reconstrução da cena do crime é essencial para entender a dinâmica dos acontecimentos e validar depoimentos. Este post detalha métodos utilizados por investigadores forenses.</p>
-        <h3>1. Levantamento da cena</h3>
-        <ul><li>Registrar toda a cena com fotos e vídeos antes de qualquer movimentação.</li><li>Marcar posição de objetos, evidências e corpos.</li></ul>
-        <h3>2. Análise de trajetórias</h3>
-        <ul><li>Estudar ângulos de tiros ou golpes para determinar a posição do agressor e da vítima.</li><li>Uso de lasers, fitas métricas e softwares 3D para simulação.</li></ul>
-        <h3>3. Reconstrução narrativa</h3>
-        <ul><li>Combinar depoimentos com evidências físicas para entender a sequência dos fatos.</li><li>Produzir relatórios detalhados para a investigação e tribunal.</li></ul>
-        <p><strong>Engajamento:</strong> Você já participou de uma reconstrução de cena de crime? Comente sua experiência!</p>
+        <h3>1. Levantamento da cena 📸</h3>
+        <ul>
+            <li>Registrar toda a cena com fotos e vídeos antes de qualquer movimentação.</li>
+            <li>Marcar posição de objetos, evidências e corpos.</li>
+        </ul>
+        <h3>2. Análise de trajetórias 🏹</h3>
+        <ul>
+            <li>Estudar ângulos de tiros ou golpes para determinar a posição do agressor e da vítima.</li>
+            <li>Uso de lasers, fitas métricas e softwares 3D para simulação.</li>
+        </ul>
+        <h3>3. Reconstrução narrativa 📝</h3>
+        <ul>
+            <li>Combinar depoimentos com evidências físicas para entender a sequência dos fatos.</li>
+            <li>Produzir relatórios detalhados para investigação e tribunal.</li>
+        </ul>
     </div>
 
     <!-- Post 8 -->
     <div class="post" id="post8">
+        <img src="https://images.unsplash.com/photo-wawEfYdpkag" alt="Coleta de evidências digitais">
         <h2>Coleta e preservação de evidências digitais</h2>
-        <p>Com o aumento dos crimes cibernéticos, a coleta correta de evidências digitais é crucial para a investigação forense. Saiba como proceder.</p>
-        <h3>1. Preservação dos dispositivos</h3>
-        <ul><li>Não alterar os dados originais durante a coleta.</li><li>Utilizar ferramentas de clonagem e imagens forenses de discos rígidos e celulares.</li></ul>
-        <h3>2. Registro detalhado</h3>
-        <ul><li>Documentar quem coletou a evidência, data, hora e local.</li><li>Registrar hash dos arquivos para garantir autenticidade.</li></ul>
-        <h3>3. Transferência segura</h3>
-        <ul><li>Transportar dados criptografados ou usando mídias seguras.</li><li>Evitar exposição a softwares não confiáveis durante análise.</li></ul>
-        <p><strong>Engajamento:</strong> Qual ferramenta digital você considera indispensável para investigação forense? Comente abaixo!</p>
+        <h3>1. Preservação dos dispositivos 🔒</h3>
+        <ul>
+            <li>Não alterar os dados originais durante a coleta.</li>
+            <li>Utilizar ferramentas de clonagem e imagens forenses de discos e celulares.</li>
+        </ul>
+        <h3>2. Registro detalhado 📝</h3>
+        <ul>
+            <li>Documentar quem coletou a evidência, data, hora e local.</li>
+            <li>Registrar hash dos arquivos para garantir autenticidade.</li>
+        </ul>
+        <h3>3. Transferência segura 📦</h3>
+        <ul>
+            <li>Transportar dados criptografados ou usando mídias seguras.</li>
+            <li>Evitar exposição a softwares não confiáveis durante análise.</li>
+        </ul>
     </div>
 
     <!-- Post 9 -->
     <div class="post" id="post9">
+        <img src="https://images.unsplash.com/photo-FHG2oizTlpY" alt="Perfil criminal">
         <h2>Perfil criminal e investigação comportamental</h2>
-        <p>Investigar o comportamento do criminoso ajuda a prever padrões e antecipar movimentos. Este post apresenta conceitos de perfil criminal e análise comportamental.</p>
-        <h3>1. Entrevista e observação</h3>
-        <ul><li>Coleta de informações de testemunhas, suspeitos e vítimas.</li><li>Registro de linguagem corporal, padrões de fala e inconsistências.</li></ul>
-        <h3>2. Análise de padrões de crime</h3>
-        <ul><li>Identificação de modus operandi (MO) e assinatura do criminoso.</li><li>Comparação com casos anteriores para traçar perfil.</li></ul>
-        <h3>3. Aplicação prática</h3>
-        <ul><li>Auxílio em prisões preventivas e monitoramento de suspeitos.</li><li>Suporte para delegados e peritos na tomada de decisões estratégicas.</li></ul>
-        <p><strong>Engajamento:</strong> Você já estudou perfis criminais? Qual caso chamou mais sua atenção?</p>
+        <h3>1. Entrevista e observação 👁️</h3>
+        <ul>
+            <li>Coleta de informações de testemunhas, suspeitos e vítimas.</li>
+            <li>Registro de linguagem corporal, padrões de fala e inconsistências.</li>
+        </ul>
+        <h3>2. Análise de padrões de crime 🔍</h3>
+        <ul>
+            <li>Identificação de modus operandi (MO) e assinatura do criminoso.</li>
+            <li>Comparação com casos anteriores para traçar perfil.</li>
+        </ul>
+        <h3>3. Aplicação prática 🧠</h3>
+        <ul>
+            <li>Auxílio em prisões preventivas e monitoramento de suspeitos.</li>
+            <li>Suporte para delegados e peritos na tomada de decisões estratégicas.</li>
+        </ul>
     </div>
 
 </div>
